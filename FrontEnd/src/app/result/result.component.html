@@ -1,0 +1,7 @@
+<app-loader *ngIf="isloading" style="margin-left: 750px;"></app-loader>
+<app-navigation *ngIf="!isloading"></app-navigation>
+<div id="wrapper" *ngIf="!isloading">
+        <div id="container">
+            <h1>Your Iq <br>{{this.authservice.useriq}}</h1>
+        </div>
+</div>

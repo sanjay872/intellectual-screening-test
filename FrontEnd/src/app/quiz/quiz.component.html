@@ -1,0 +1,25 @@
+<app-loader *ngIf="isloading" style="margin-left: 750px;"></app-loader>
+<div *ngIf="!isloading">
+    <app-navigation></app-navigation>
+    <br><br><br><br>
+    <div class="privew" *ngFor="let qns of authservice.qns">
+        <div class="questionsBox">
+            <div class="questions">
+                <span>{{qns.id}}</span>)
+             <div class="question" *ngIf=qns.question>{{qns.question}}</div>   
+            <br>
+            <div *ngIf=qns.questionimg>
+                <img [src]=qns.questionimg>
+            </div>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item"><input type="radio" [name]="qns.id" (click)=useranswer(qns.id,1)> {{qns.option1}}</li>
+                <li class="list-group-item"><input type="radio" [name]="qns.id" (click)=useranswer(qns.id,2)> {{qns.option2}}</li>
+                <li class="list-group-item"><input type="radio" [name]="qns.id" (click)=useranswer(qns.id,3)> {{qns.option3}}</li>
+                <li class="list-group-item"><input type="radio" [name]="qns.id" (click)=useranswer(qns.id,4)> {{qns.option4}}</li>
+            </ul>
+        </div>
+    </div>
+    <button class="btn btn-success" (click)=submitanswer() style="margin-left: 600px; width: 300px;">Submit</button>
+    <p></p>
+</div>

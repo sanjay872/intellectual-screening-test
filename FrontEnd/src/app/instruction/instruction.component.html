@@ -1,0 +1,48 @@
+<app-navigation></app-navigation>
+<br><br>
+<h3 class="title">Intellectual disability</h3>
+<p>
+Intellectual disability is defined as follows: a significant impairment of intellectual functioning 
+(i.e. an IQ of greater than 70) and a significant
+impairment in two or more areas of daily living and
+onset before the age of 18 (World Health Organisation
+1992)
+</p>
+<hr><br>
+<p>
+It is diagnosed by a standardized assessment of
+cognitive and adaptive functioning, as well as a developmental history [American Association of Intellectual and
+Developmental Disabilities (AAIDD) 2009].
+</p>
+<hr><br>
+<p>
+There are, therefore, a number of reasons to accurately
+identify those children who have an intellectual disability and differentiate them from children who may have
+other cognitive difficulties, such as specific learning
+difficulties. The identification of intellectual disability in
+children can, however, be problematic, especially for
+those with significant intellectual impairment (Hamilton
+2006; Simonoff et al. 2006).
+</p>
+<hr>
+<h3>IQ Test</h3>
+<p>
+    The term IQ, or Intelligence Quotient, generally describes a score on a test that rates the subject's cognitive ability
+    as compared to the general population. IQ tests use a standardized scale with 100 as the median score. On most tests,
+    a score between 90 and 110, or the median plus or minus 10, indicates average intelligence. A score above 130 indicates exceptional 
+    intelligence and a score below 70 may indicate mental retardation. Like their predecessors, modern tests do take in to account the age of a child when determining an IQ score.
+    Children are graded relative to the population at their developmental level.
+</p>
+   <ul>
+       <li>spatial ability: the ability to visualize manipulation of shapes</li>
+       <li> mathematical ability: the ability to solve problems and use logic</li>
+       <li>language ability: This could include the ability to complete sentences or recognize words when letters have been rearranged or removed.</li>
+       <li>memory ability: the ability to recall things presented either visually or aurally</li>
+   </ul>
+   <br>
+   <br>
+<form (ngSubmit)="onSubmit(form)" #form='ngForm'>
+    <div class="age">Age  <input  name="age"  type="number" [pattern]="limit" ngModel required width="100px">  *(8-18)</div>
+    <br><br>
+    <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Begin</button>
+</form>

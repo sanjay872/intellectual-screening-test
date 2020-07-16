@@ -1,0 +1,64 @@
+.box {
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    display: block;
+    margin:200px;
+    margin-top: 100px;
+    width: 800px;
+    height: 600px;
+   background-color: white;
+   opacity: 0.9;
+}
+form{
+    margin: 50px;
+}
+input{
+    display: block;
+    margin: 40px auto;
+    margin-bottom: 2px;;
+    text-align: center;
+    background: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    width:200px;
+    outline: none;
+    color: black;
+    padding: 5px;
+    transition: 0.25s;
+}
+button{
+    display: block;
+    margin: 40px auto;
+    margin-left: 430px;
+    text-align: center;
+    margin-top: 60px;
+}
+button:hover{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+a{
+    margin-left: 600px;
+}
+input:hover{
+    border-color: black;
+    width:220px;
+}
+.title{
+    display: block;
+    padding: 10px;
+    margin: 100px;
+    margin-left: 300px;
+    font-family: cursive;
+    font-weight: bold;
+    color:black;
+    font-size: large;
+}
+span{
+    margin-left: 150px;
+    margin-bottom: 2px;
+    color: red;
+}
+.alert{
+    margin-left: 200px; 
+    margin-right: 150px;
+}

@@ -1,13 +1,5 @@
-<nav class="navbar navbar-inverse" id="up">
-    <div class="container-fluid">
-      <ul class="nav navbar-nav">
-        <li><a routerLink="/{{group}}/home"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-        <li><a routerLink="/{{group}}/profile"> <span class="glyphicon glyphicon-user"></span> Profile</a></li>
-        <li *ngIf="group=='donor'"><a routerLink="/donor/category"><span class="glyphicon glyphicon-th-list"> Category</span></a></li>
-        <li *ngIf="group=='welfare'"><a routerLink="/welfare/post"><span class="glyphicon glyphicon-list-alt"></span> post</a></li>
-        <li><a routerLink="/{{group}}/help">Help</a></li>
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+    <ul class="nav navbar-nav navbar-right">
+        <li style="margin-right: 50px;"><a href="#" (onclick)=logout() style="color: white;">Logout</a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a (click)="logout()"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
-      </ul>
-    </div>
+</nav>
